@@ -1,0 +1,7 @@
+/.idea/
+/__pycache__/
+/config/
+/consumer_test.py
+/main.py
+/producer_test.py
+/ARGOCD_CTX.txt
