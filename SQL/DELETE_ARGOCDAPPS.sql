@@ -1,0 +1,4 @@
+DELETE 
+	FROM ARGOCDAPPS
+	WHERE AID = :aid 
+		AND APPID = :appid
