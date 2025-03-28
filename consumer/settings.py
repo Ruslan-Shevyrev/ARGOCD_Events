@@ -27,6 +27,7 @@ def get_os_variable(name, config_param=None, config_name='db', default_value=Non
                 raise exc
             return default_value
 
+
 APEX_USER = get_os_variable('APEX_USER', 'USER')
 APEX_PASSWORD = get_os_variable('APEX_PASSWORD', 'PASSWORD')
 APEX_DSN = get_os_variable('APEX_DSN', 'DSN')
