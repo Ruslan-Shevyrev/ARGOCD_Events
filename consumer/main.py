@@ -75,7 +75,7 @@ def process_message(message: Dict[str, Any], sql_list: Dict[str, str]):
         appurl = source.get('repoURL')
         health = status.get('health', {})
         ahealth = health.get('status', '').lower()
-        ats = parse_timestamp(metadata.get('creationTimestamp', ''))
+        ats = parse_timestamp(status.get('reconciledAt', ''))
         sync = status.get('sync', {})
         sync_status = sync.get('status')
         operation_state = status.get('operationState')
